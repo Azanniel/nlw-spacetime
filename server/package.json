@@ -1,0 +1,32 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "O backend da aplicação nlw-spacetime",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "types:check": "tsc --noEmit --pretty"
+  },
+  "keywords": [
+    "nlw",
+    "nodejs",
+    "fastify"
+  ],
+  "author": "Leandro Azanniel <leo.azannielttt@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@rocketseat/eslint-config": "^1.2.0",
+    "@types/node": "^20.1.7",
+    "eslint": "^8.40.0",
+    "prisma": "^4.14.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.14.0",
+    "fastify": "^4.17.0"
+  }
+}
