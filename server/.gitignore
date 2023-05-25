@@ -6,3 +6,7 @@ node_modules
 
 # Database
 prisma/database
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
