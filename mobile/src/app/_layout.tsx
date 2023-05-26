@@ -29,7 +29,7 @@ export default function Layout() {
     })
   }, [])
 
-  if (!hasLoadedFonts) {
+  if (!hasLoadedFonts || isUserAuthenticated === null) {
     return <SplashScreen />
   }
 
@@ -49,7 +49,7 @@ export default function Layout() {
           animation: 'slide_from_right',
         }}
       >
-        <Stack.Screen name="index" redirect={Boolean(isUserAuthenticated)} />
+        <Stack.Screen name="index" redirect={isUserAuthenticated} />
         <Stack.Screen name="memories" />
         <Stack.Screen name="new" />
       </Stack>
